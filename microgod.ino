@@ -79,6 +79,7 @@ const unsigned char PROGMEM arrow_up_mask[] = {
 };
 
 // Game elements
+/* compressed
 const PROGMEM uint8_t faith_image[] = {
 0x0f,0x0f,0xb8,0x9d,0xca,0xf6,0xaa,0x5c,0xed,0x6a,0x77,0xb9,0x7b,0x97,0x77,0x78,
 0xdb,0xef,0x52,0x29,0xf5,0xa9,0x2f,0x95,0xdc,0x8d,0x25
@@ -88,8 +89,21 @@ const PROGMEM uint8_t faith_image[] = {
 const PROGMEM uint8_t faith_mask[] = {
 0x0f,0x0f,0xb8,0x9d,0x92,0xdb,0x6d,0x3a,0xbd,0xdd,0x2a,0xe9,0x1c,0xde,0xb6,0xce,
 0x49,0xa5,0xd3,0x49,0xe5,0xdc,0x58,0x02
+};*/
+
+// faith sprite 16x16
+const unsigned char PROGMEM faith_image[] = {
+0x00,0x00,0x00,0xf0,0x08,0x64,0xf4,0xf2,0xf2,0xf4,0x64,0x08,0xf0,0x00,0x00,0x00,
+0x00,0x00,0x00,0x00,0x03,0x0c,0x11,0x67,0x67,0x11,0x0c,0x03,0x00,0x00,0x00,0x00
 };
 
+const unsigned char PROGMEM faith_mask[] = {
+0x00,0x00,0x00,0xf0,0xf8,0xfc,0xfc,0xfe,0xfe,0xfc,0xfc,0xf8,0xf0,0x00,0x00,0x00,
+0x00,0x00,0x00,0x00,0x03,0x0f,0x1f,0x7f,0x7f,0x1f,0x0f,0x03,0x00,0x00,0x00,0x00
+};
+
+/*
+ * compressed
 // bytes:24 ratio: 0.750// faith_small.png  width: 8 height: 8
 const PROGMEM uint8_t faith_small_image[] = {
 0x07,0x07,0x5e,0xf6,0xd7,0x57,0xb9,0xce,0x75,0xdf,0xbd,0xdb,0x01
@@ -99,8 +113,19 @@ const PROGMEM uint8_t faith_small_image[] = {
 const PROGMEM uint8_t faith_small_mask[] = {
 0x07,0x07,0x5e,0xf6,0xd7,0x57,0xb9,0xce,0x75,0xdf,0xbd,0xdb,0x01
 };
-// bytes:13 ratio: 1.625
+// bytes:13 ratio: 1.625 */
 
+const unsigned char PROGMEM faith_small_image[] = {
+0x0c,0x32,0x4d,0xbd,0xbd,0x4d,0x32,0x0c
+};
+
+
+const unsigned char PROGMEM faith_small_mask[] = {
+0x0c,0x32,0x4d,0xbd,0xbd,0x4d,0x32,0x0c
+};
+
+/*
+ * compressed
 // predicament.png  width: 8 height: 8
 const PROGMEM uint8_t predicament_image[] = {
 0x07,0x07,0x88,0xe4,0x55,0x55,0xa5,0x2a,0x55,0x55,0x55,0x95,0x2c,0x22
@@ -110,8 +135,18 @@ const PROGMEM uint8_t predicament_image[] = {
 const PROGMEM uint8_t predicament_mask[] = {
 0x07,0x07,0x88,0xe4,0x55,0x55,0xa5,0x2a,0x55,0x55,0x55,0x95,0x2c,0x22
 };
-// bytes:14 ratio: 1.750
+// bytes:14 ratio: 1.750 */
 
+const unsigned char PROGMEM predicament_image[] = {
+0x00,0x3e,0x55,0x5d,0x57,0x55,0x5f,0x00
+};
+
+const unsigned char PROGMEM predicament_mask[] = {
+0x00,0x3e,0x55,0x5d,0x57,0x55,0x5f,0x00
+};
+
+/*
+ * compressed
 // sacred.png  width: 8 height: 8
 const PROGMEM uint8_t sacred_image[] = {
 0x07,0x07,0x5a,0x55,0xe5,0x7c,0x6d,0xb7,0xcb,0x2c,0x11
@@ -121,8 +156,18 @@ const PROGMEM uint8_t sacred_image[] = {
 const PROGMEM uint8_t sacred_mask[] = {
 0x07,0x07,0x5a,0x55,0xe5,0x7c,0x6d,0xb7,0xcb,0x2c,0x11
 };
-// bytes:11 ratio: 1.375
+// bytes:11 ratio: 1.375 */
 
+const unsigned char PROGMEM sacred_image[] = {
+0x46,0x85,0x7f,0xf9,0xf9,0xf9,0x7e,0x00
+};
+
+const unsigned char PROGMEM sacred_mask[] = {
+0x46,0x85,0x7f,0xf9,0xf9,0xf9,0x7e,0x00
+};
+
+/*
+ * compressed
 // prophet.png  width: 8 height: 8
 const PROGMEM uint8_t prophet_image[] = {
 0x07,0x07,0x2b,0xe9,0xba,0xb7,0xb9,0x5e,0x75,0xb2,0x9f,0x08
@@ -132,8 +177,18 @@ const PROGMEM uint8_t prophet_image[] = {
 const PROGMEM uint8_t prophet_mask[] = {
 0x07,0x07,0x2b,0xe9,0xba,0xb7,0xb9,0x5e,0x75,0xb2,0x9f,0x08
 };
-// bytes:12 ratio: 1.500
+// bytes:12 ratio: 1.500 */
 
+const unsigned char PROGMEM prophet_image[] = {
+0x05,0x6f,0xf3,0x7b,0x73,0xfb,0x66,0x00
+};
+
+const unsigned char PROGMEM prophet_mask[] = {
+0x05,0x6f,0xf3,0x7b,0x73,0xfb,0x66,0x00
+};
+
+/*
+  * compressed
 // priest.png  width: 8 height: 8
 const PROGMEM uint8_t priest_image[] = {
 0x07,0x07,0x4e,0x67,0xaf,0x5d,0x3a,0x59,0xab,0x73,0x79
@@ -143,8 +198,18 @@ const PROGMEM uint8_t priest_image[] = {
 const PROGMEM uint8_t priest_mask[] = {
 0x07,0x07,0x4e,0x67,0xaf,0x5d,0x3a,0x59,0xab,0x73,0x79
 };
-// bytes:11 ratio: 1.375
+// bytes:11 ratio: 1.375 */
 
+const unsigned char PROGMEM priest_image[] = {
+0x04,0x04,0x96,0xf7,0xf7,0xe5,0x84,0x00
+};
+
+const unsigned char PROGMEM priest_mask[] = {
+0x04,0x04,0x96,0xf7,0xf7,0xe5,0x84,0x00
+};
+
+/*
+ * compressed
 // temple.png  width: 8 height: 8
 const PROGMEM uint8_t temple_image[] = {
 0x07,0x07,0x57,0xb2,0xbb,0x2a,0xd9,0xea,0x76,0x55,0xb2,0x73,0x4a,0x01
@@ -154,8 +219,18 @@ const PROGMEM uint8_t temple_image[] = {
 const PROGMEM uint8_t temple_mask[] = {
 0x07,0x07,0x57,0xb2,0xbb,0x2a,0xd9,0xea,0x76,0x55,0xb2,0x73,0x4a,0x01
 };
-// bytes:14 ratio: 1.750
+// bytes:14 ratio: 1.750 */
 
+const unsigned char PROGMEM temple_image[] = {
+0xe3,0xdb,0xea,0x1b,0x1b,0xea,0xdb,0xe3
+};
+
+const unsigned char PROGMEM temple_mask[] = {
+0xe3,0xdb,0xea,0x1b,0x1b,0xea,0xdb,0xe3
+};
+
+/*
+ * compressed
 // saint.png  width: 8 height: 8
 const PROGMEM uint8_t saint_image[] = {
 0x07,0x07,0x9d,0xad,0xd5,0x15,0x51,0xfa,0xab,0xaf,0x77,0x0e
@@ -165,8 +240,17 @@ const PROGMEM uint8_t saint_image[] = {
 const PROGMEM uint8_t saint_mask[] = {
 0x07,0x07,0x9d,0xad,0xd5,0x15,0x51,0xfa,0xab,0xaf,0x77,0x0e
 };
-// bytes:12 ratio: 1.500
+// bytes:12 ratio: 1.500 */
+const unsigned char PROGMEM saint_image[] = {
+0x0f,0x34,0xd6,0x7f,0x7f,0xd6,0x34,0x0f
+};
 
+const unsigned char PROGMEM saint_mask[] = {
+0x0f,0x34,0xd6,0x7f,0x7f,0xd6,0x34,0x0f
+};
+
+/*
+ * compressed
 // marthyr.png  width: 8 height: 8
 const PROGMEM uint8_t marthyr_image[] = {
 0x07,0x07,0x98,0xee,0xa5,0x52,0xbd,0x2a,0xe5,0xa4,0xa2,0x02
@@ -176,7 +260,16 @@ const PROGMEM uint8_t marthyr_image[] = {
 const PROGMEM uint8_t marthyr_mask[] = {
 0x07,0x07,0x98,0xee,0xa5,0x52,0xbd,0x2a,0xe5,0xa4,0xa2,0x02
 };
-// bytes:12 ratio: 1.500
+// bytes:12 ratio: 1.500 */
+
+const unsigned char PROGMEM marthyr_image[] = {
+0x00,0x6c,0x3e,0x6e,0x2e,0x1e,0x1c,0x00
+};
+
+
+const unsigned char PROGMEM marthyr_mask[] = {
+0x00,0x6c,0x3e,0x6e,0x2e,0x1e,0x1c,0x00
+};
 
 // Game state
 int gamestate = TITLE;
@@ -237,8 +330,8 @@ class FaithSprite {
           this->steps = 0;
           this->velocity++;
         }
-        arduboy.drawCompressed(this->x, this->y, faith_mask, BLACK);
-        arduboy.drawCompressed(this->x, this->y, faith_image, WHITE);
+        arduboy.drawBitmap(this->x, this->y, faith_mask, 16, 16, BLACK);
+        arduboy.drawBitmap(this->x, this->y, faith_image, 16, 16, WHITE);
       }
     }
 
@@ -345,13 +438,6 @@ void resetgame() {
     prices[c] = p;
     p = p * 10L;
   }
-
-  resources[1] = 30;
-  resources[2] = 23;
-  resources[3] = 18;
-  resources[4] = 13;
-  resources[5] = 7;
-  resources[6] = 2;
   
   arduboy.initRandomSeed();
 }
@@ -745,36 +831,36 @@ void animate_items() {
 void draw_item(int item, int x, int y) {
   switch(item) {
     case PRAYERS:
-      arduboy.drawCompressed(x, y, faith_small_mask, BLACK);
-      arduboy.drawCompressed(x, y, faith_small_image, WHITE);
+      arduboy.drawBitmap(x, y, faith_small_mask, 8, 8, BLACK);
+      arduboy.drawBitmap(x, y, faith_small_image, 8, 8, WHITE);
       break;
     case SACRED_WRITINGS:
-      arduboy.drawCompressed(x, y, sacred_mask, BLACK);
-      arduboy.drawCompressed(x, y, sacred_image, WHITE);
+      arduboy.drawBitmap(x, y, sacred_mask, 8, 8, BLACK);
+      arduboy.drawBitmap(x, y, sacred_image, 8, 8, WHITE);
       break;
     case PREDICAMENTS:
-      arduboy.drawCompressed(x, y, predicament_mask, BLACK);
-      arduboy.drawCompressed(x, y, predicament_image, WHITE);
+      arduboy.drawBitmap(x, y, predicament_mask, 8, 8, BLACK);
+      arduboy.drawBitmap(x, y, predicament_image, 8, 8, WHITE);
       break;
     case PRIESTS:
-      arduboy.drawCompressed(x, y, priest_mask, BLACK);
-      arduboy.drawCompressed(x, y, priest_image, WHITE);
+      arduboy.drawBitmap(x, y, priest_mask, 8, 8, BLACK);
+      arduboy.drawBitmap(x, y, priest_image, 8, 8, WHITE);
       break;
     case PROPHETS:
-      arduboy.drawCompressed(x, y, prophet_mask, BLACK);
-      arduboy.drawCompressed(x, y, prophet_image, WHITE);
+      arduboy.drawBitmap(x, y, prophet_mask, 8, 8, BLACK);
+      arduboy.drawBitmap(x, y, prophet_image, 8, 8, WHITE);
       break;
     case SAINTS:
-      arduboy.drawCompressed(x, y, saint_mask, BLACK);
-      arduboy.drawCompressed(x, y, saint_image, WHITE);
+      arduboy.drawBitmap(x, y, saint_mask, 8, 8, BLACK);
+      arduboy.drawBitmap(x, y, saint_image, 8, 8, WHITE);
       break;
     case TEMPLES:
-      arduboy.drawCompressed(x, y, temple_mask, BLACK);
-      arduboy.drawCompressed(x, y, temple_image, WHITE);
+      arduboy.drawBitmap(x, y, temple_mask, 8, 8, BLACK);
+      arduboy.drawBitmap(x, y, temple_image, 8, 8, WHITE);
       break;
     case MARTHYRS:
-      arduboy.drawCompressed(x, y, marthyr_mask, BLACK);
-      arduboy.drawCompressed(x, y, marthyr_image, WHITE);
+      arduboy.drawBitmap(x, y, marthyr_mask, 8, 8, BLACK);
+      arduboy.drawBitmap(x, y, marthyr_image, 8, 8, WHITE);
       break;
   }
 }
@@ -884,7 +970,7 @@ void game_tick() {
     int delta = 0;
     for (int c = 1; c < 8; c++) {
       int res = resources[c];
-      delta += res * c;
+      delta += res * (c * c);
     }
 
     if (double_rate) {
